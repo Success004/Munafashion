@@ -1,0 +1,53 @@
+.feature{
+ 
+  
+    @include breakpoint-up(medium){
+      text-align: left;
+    }
+  
+  
+  
+
+  &__grid{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: column;
+    //flex: 1 0 50%;
+    align-items: center;
+    
+    
+    @include breakpoint-up(medium){
+      display: flex;
+      flex-direction: unset;
+      align-items: unset;
+      flex-wrap: wrap;
+      padding-right: unset;
+      padding-left: unset;
+
+    }
+    
+    @include breakpoint-up(large){
+      
+    }
+  }
+  
+  &__item{
+    padding:0.9375rem;
+    border:1px solid red;
+    display: flex;
+    flex-direction: column;
+    
+    @include breakpoint-up(medium){
+      flex: 1 0 50%;
+
+    }
+
+    @include breakpoint-up(large){
+      flex: 1;
+    }
+
+  }
+
+
+}
+
